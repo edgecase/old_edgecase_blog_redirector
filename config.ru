@@ -13,3 +13,5 @@ use Rack::Rewrite do
   r301 /.*/, 'http://edgecase.github.com/blog.html'
 end
 
+run lambda {}
+
