@@ -7,10 +7,10 @@ use Rack::Rewrite do
     day       = match[3].rjust(2, '0')
     permalink = match[4]
 
-    "http://edgecase.github.com/#{year}/#{month}/#{day}/#{permalink}.html"
+    "http://edgecase.com/#{year}/#{month}/#{day}/#{permalink}.html"
   }
 
-  r301 /.*/, 'http://edgecase.github.com/blog.html'
+  r301 /.*/, 'http://edgecase.com/blog.html'
 end
 
 run lambda {}
